@@ -16,9 +16,9 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  config.vm.network "forwarded_port", guest: 8080, host: 8888, host_ip: "127.0.0.1"
-#  config.vm.network "forwarded_port", guest: 7077, host: 7777, host_ip: "127.0.0.1"
-#  config.vm.network "forwarded_port", guest: 6066, host: 6666, host_ip: "127.0.0.1"
+  config.vm.network "forwarded_port", guest: 8080, host: 8881, host_ip: "127.0.0.1"
+#  config.vm.network "forwarded_port", guest: 7077, host: 7771, host_ip: "127.0.0.1"
+#  config.vm.network "forwarded_port", guest: 6066, host: 6661, host_ip: "127.0.0.1"
 
   config.vm.provision "shell", path: "setup.sh"
 
