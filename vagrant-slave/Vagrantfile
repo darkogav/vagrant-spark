@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Centos 7 Spark Slave Vagrant File
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "centos/7"
+
+  config.vm.define "spark-slave" do |host|
+    host.vm.hostname = "spark-slave"
+    host.vm.provider :virtualbox do |vb|
+      vb.name = host.vm.hostname.to_s
+	  vb.gui = false
+      vb.memory = "1024"
+    end
+  end
+
+  config.vm.network "forwarded_port", guest: 8080, host: 8882, host_ip: "127.0.0.1"
+  config.vm.network "private_network", ip: "192.168.50.12",virtualbox__intnet: true
+#  config.vm.network "forwarded_port", guest: 7077, host: 7772, host_ip: "127.0.0.1"
+#  config.vm.network "forwarded_port", guest: 6066, host: 6662, host_ip: "127.0.0.1"
+
+  config.vm.provision "shell", path: "setup.sh"
+
+end
