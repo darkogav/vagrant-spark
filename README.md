@@ -13,18 +13,16 @@ Private addressing is:
 - 192.168.50.11 spark-master-priv
 - 192.168.50.12 spark-slave-priv
 
-Completed:
- [x] vagant automate  host setup
- [x] spark auto downoad and extract
-
-Pending:
- [ ] setup auto start scripts.
- [ ] spark master:  `/opt/spark/sbin/start-master.sh`
- [ ] spark slave: `/opt/spark/sbin/start-slave.sh spark://spark-master-priv:7077`
- [ ] hadoop stuff
- [ ] cassandara stuff
- [ ] pyspark
- [ ] jypiter
+Tasks:
+- [x] vagant automate  host setup
+- [x] spark auto downoad and extract
+- [ ] setup auto start scripts.
+- [ ] spark master:  `/opt/spark/sbin/start-master.sh`
+- [ ] spark slave: `/opt/spark/sbin/start-slave.sh spark://spark-master-priv:7077`
+- [ ] hadoop stuff
+- [ ] cassandara stuff
+- [ ] pyspark
+- [ ] jypiter
 
 Access managment GUI for master http://127.0.0.1:8881/
 Access managment GUI for slave http://127.0.0.1:8882/
