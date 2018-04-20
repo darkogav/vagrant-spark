@@ -7,8 +7,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "centos/7"
 
-  config.vm.define "spark-centos7-master" do |host|
-    host.vm.hostname = "spark-centos7-master"
+  config.vm.define "spark-centos7-m" do |host|
+    host.vm.hostname = "spark-centos7-m"
     host.vm.provider :virtualbox do |vb|
       vb.name = host.vm.hostname.to_s
 	  vb.gui = false
