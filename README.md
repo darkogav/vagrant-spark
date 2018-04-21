@@ -16,13 +16,13 @@ Private addressing is:
 Tasks:
 - [x] vagant automate  host setup
 - [x] spark auto downoad and extract
-- [ ] setup auto start scripts.
-- [ ] spark master:  `/opt/spark/sbin/start-master.sh`
+- [x] setup systemd auto startup scripts.
+- [x] spark master:  `/opt/spark/sbin/start-master.sh`
 - [ ] spark slave: `/opt/spark/sbin/start-slave.sh spark://spark-master-priv:7077`
 - [ ] hadoop stuff
 - [ ] cassandara stuff
 - [ ] pyspark
-- [ ] jypiter
+- [ ] jupyter
 
 Access managment GUI for master http://127.0.0.1:8881/
 Access managment GUI for slave http://127.0.0.1:8882/
@@ -32,3 +32,5 @@ Not used. 7771 6661
 
 *Resources:*
 https://www.vagrantup.com/docs/virtualbox/networking.html
+https://www.redhat.com/en/blog/converting-traditional-sysv-init-scripts-red-hat-enterprise-linux-7-systemd-unit-files
+https://access.redhat.com/solutions/1751263
