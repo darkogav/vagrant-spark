@@ -31,6 +31,6 @@ Usage ports are 8881
 Not used. 7771 6661
 
 *Resources:*
-https://www.vagrantup.com/docs/virtualbox/networking.html
-https://www.redhat.com/en/blog/converting-traditional-sysv-init-scripts-red-hat-enterprise-linux-7-systemd-unit-files
-https://access.redhat.com/solutions/1751263
+- https://www.vagrantup.com/docs/virtualbox/networking.html
+- https://www.redhat.com/en/blog/converting-traditional-sysv-init-scripts-red-hat-enterprise-linux-7-systemd-unit-files
+- https://access.redhat.com/solutions/1751263
