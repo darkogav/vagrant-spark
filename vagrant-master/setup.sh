@@ -11,7 +11,13 @@ yum upgrade -y >>/tmp/setup.log 2>&1
 java --version >>/tmp/setup.log 2>&1
 wget http://muug.ca/mirror/apache-dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz -P /opt >>/tmp/setup.log 2>&1
 tar xvf /opt/spark-2.3.0-bin-hadoop2.7.tgz -C /opt >>/tmp/setup.log 2>&1
+#chcon -t httpd_sys_content_t /var/www/html -R >>/tmp/provision-script.log 2>&1
+#chcon -t httpd_sys_rw_content_t /var/www/html -R >>/tmp/provision-script.log 2>&1
+#unconfined_u
+#system_u:object_r:usr_t:s0
+#chcon -t httpd_sys_content_t /opt/spark -R >>/tmp/provision-script.log 2>&1
 chown -R root:root /opt >>/tmp/setup.log 2>&1
 ln -s /opt/spark-2.3.0-bin-hadoop2.7 /opt/spark >>/tmp/setup.log 2>&1
+
 echo "Setup complete .. rebooting.."
 reboot >>/tmp/setup.log 2>&1

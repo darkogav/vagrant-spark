@@ -1,0 +1,17 @@
+# /etc/systemd/system/spark.service
+# systemctl daemon-reload
+
+[Unit]
+Description=Spark Master
+After=default.target
+
+[Service]
+User=root
+Type=forking
+ExecStart=/opt/spark/sbin/start-master.sh
+ExecStop=/opt/spark/sbin/stop-master.sh
+TimeoutSec=30
+
+[Install]
+WantedBy=default.target
+
