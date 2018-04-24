@@ -8,7 +8,7 @@ After=default.target
 [Service]
 User=root
 Type=forking
-ExecStart=/opt/spark/sbin/start-slave.sh -h spark-slave-priv spark://master-priv:7077
+ExecStart=/opt/spark/sbin/start-slave.sh -h slave1-priv spark://master-priv:7077
 ExecStop=/opt/spark/sbin/stop-slave.sh
 TimeoutSec=30
 
