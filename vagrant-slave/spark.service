@@ -1,0 +1,18 @@
+# /etc/systemd/system/spark.service
+# systemctl daemon-reload
+# update by darko
+
+[Unit]
+Description=Spark Slave
+After=default.target
+
+[Service]
+User=root
+Type=forking
+ExecStart=/opt/spark/sbin/start-slave.sh -h spark-slave-priv spark://spark-master-priv:7077
+ExecStop=/opt/spark/sbin/stop-slave.sh
+TimeoutSec=30
+
+[Install]
+WantedBy=default.target
+

@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Setting up vagrant image for Spark Slave"
-echo -e "192.168.50.11\tspark-master-priv\n192.168.50.12\tspark-slave-priv\n" >> /etc/hosts
+echo "Setting up vagrant image for Spark Slave 2"
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm >>/tmp/setup.log 2>&1
 yum-config-manager --enable epel -y >>/tmp/setup.log 2>&1
 yum update >>/tmp/setup.log 2>&1

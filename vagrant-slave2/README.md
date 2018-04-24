@@ -8,7 +8,7 @@ Applications:
 - Java 1.8.0_161
 
 - Start master: 
-- /opt/spark/sbin/start-master.sh -h
+- /opt/spark/sbin/start-master.sh
 - Start slave
 - /opt/spark/sbin/start-slave.sh spark://127.0.0.1:7077
 
