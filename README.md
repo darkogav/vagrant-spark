@@ -32,15 +32,15 @@ Usage ports are 8881
 Not used. 7771 6661
 
 *Resources:*
-- [] https://www.vagrantup.com/docs/virtualbox/networking.html
-- [] https://www.redhat.com/en/blog/converting-traditional-sysv-init-scripts-red-hat-enterprise-linux-7-systemd-unit-files
-- [] https://access.redhat.com/solutions/1751263
-- [] python pandas
-- [] splunk?
-- [] https://www.vagrantup.com/docs/provisioning/docker.html
-- [] https://www.vagrantup.com/docs/provisioning/file.html
-- [] https://docs.docker.com/machine/
-- [] http://boot2docker.io/
+- [ ] https://www.vagrantup.com/docs/virtualbox/networking.html
+- [ ] https://www.redhat.com/en/blog/converting-traditional-sysv-init-scripts-red-hat-enterprise-linux-7-systemd-unit-files
+- [ ] https://access.redhat.com/solutions/1751263
+- [ ] python pandas
+- [ ] splunk?
+- [ ] https://www.vagrantup.com/docs/provisioning/docker.html
+- [ ] https://www.vagrantup.com/docs/provisioning/file.html
+- [ ] https://docs.docker.com/machine/
+- [ ] http://boot2docker.io/
 
 *Requirements:*
 - Vagrant
