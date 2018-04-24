@@ -17,8 +17,6 @@ Tasks:
 - [x] vagant automate host setup
 - [x] spark auto download and extract
 - [x] setup systemd auto startup scripts.
-- [x] spark master:  `/opt/spark/sbin/start-master.sh`
-- [x] spark slave: `/opt/spark/sbin/start-slave.sh spark://spark-master-priv:7077`
 - [ ] hadoop stuff
 - [ ] cassandara stuff
 - [x] python, pip, pyspark, pandas  on master only
@@ -34,10 +32,15 @@ Usage ports are 8881
 Not used. 7771 6661
 
 *Resources:*
-- https://www.vagrantup.com/docs/virtualbox/networking.html
-- https://www.redhat.com/en/blog/converting-traditional-sysv-init-scripts-red-hat-enterprise-linux-7-systemd-unit-files
-- https://access.redhat.com/solutions/1751263
-- python pandas
+- [] https://www.vagrantup.com/docs/virtualbox/networking.html
+- [] https://www.redhat.com/en/blog/converting-traditional-sysv-init-scripts-red-hat-enterprise-linux-7-systemd-unit-files
+- [] https://access.redhat.com/solutions/1751263
+- [] python pandas
+- [] splunk?
+- [] https://www.vagrantup.com/docs/provisioning/docker.html
+- [] https://www.vagrantup.com/docs/provisioning/file.html
+- [] https://docs.docker.com/machine/
+- [] http://boot2docker.io/
 
 *Requirements:*
 - Vagrant
